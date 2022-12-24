@@ -7,9 +7,13 @@ function pokyn () {
     }
 }
 input.onButtonPressed(Button.A, function () {
+    opakuj = 0
     pokyn()
 })
 input.onButtonPressed(Button.B, function () {
+    opakuj = 1
+})
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     control.reset()
 })
 let opakuj = 0
